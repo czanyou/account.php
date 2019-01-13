@@ -1,0 +1,151 @@
+/* reset.css */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, 
+	fieldset, legend, input, button, textarea, p, blockquote, th, td { 
+	margin: 0; padding: 0; }
+address, caption, cite, code, dfn, em, strong, th, var, optgroup { 
+	font-style: inherit; font-weight: inherit; }
+input, button, textarea, select, optgroup, option { font-family: inherit; 
+	font-size: inherit; font-style: inherit; font-weight: inherit; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+ol, ul { list-style: none; }
+fieldset, img { border: 0 none; }
+sup, sub { font-size: 100%; vertical-align: baseline; }
+:link, :visited { text-decoration: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th { text-align: left; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+input, button, textarea, select { font-size: 100%; }
+html, body, header, footer, section, article, aside, dialog, nav { display: block; }
+audio, canvas, video { display: inline-block; }
+
+/* clearfix.css */
+.clearfix:after { content: "."; display: block; height: 0; line-height: 0; 
+	clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+.clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/* html.css */
+body { background: #f5f4f2; color: #555; 
+	font: 13px "Microsoft Yahei",Verdana,Simsun,"Segoe UI","Segoe UI Web Regular",
+	"Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,"sans-serif"; }
+a { color: #777; transition-property: color; transition-duration: 0.5s;  }
+a:hover { color: #ff3300; text-decoration: underline; }
+a:focus { outline: 0 none; }
+a:hover, a:active { outline: 0 none; text-decoration: none; }
+
+a, button, input { outline: 0; }
+p { margin: 3px 0; }
+hr { height: 1px; border: none; border-top: 1px dashed #ddd; }
+area { border: 1px solid #999; cursor: pointer; }
+h1, h2, h3, h4, h5, h6 { line-height: 160%; font-weight: normal; }
+h6 { font-size: 110%; }
+h5 { font-size: 120%; }
+h4 { font-size: 130%; }
+h3 { font-size: 140%; }
+h2 { font-size: 150%; }
+h1 { font-size: 160%; }
+
+/* form.css */
+input.text, input.password, input.text-readonly { box-sizing: border-box; -webkit-appearance: none; }
+input.text-readonly, input.text, input.password, textarea { box-sizing: border-box;
+	padding: 2px 5px; border: 1px solid #ccc; }
+input.text:hover, textarea:hover, select:hover, input.password:hover { 
+	border: 1px solid #aaa; 
+	background: #fff; }	
+input.text:focus, textarea:focus, select:focus, input.password:focus { 
+	/*outline: 1px solid #eed5a6; border: 1px solid #c7a158;  */
+	border: 1px solid #84BFDF;
+	box-shadow: 0px 0px 5px rgba(0,100,200,0.2);
+	background: #fff; }
+input, select, label, button { vertical-align: middle; }
+select { border: 1px solid #ccc; }
+textarea { overflow: auto; -webkit-appearance: none; }
+input[type=file] { cursor: pointer; height: 29px; }
+input[type=file]:hover { box-shadow: none; }
+input[type=file]::-webkit-file-upload-button { border-radius: 2px; color: #555;
+	border: 1px solid #ddd; line-height: 27px; padding: 0 18px; background: #f4f4f4;
+	background-image: -webkit-linear-gradient(top, #fff, #f1f1f1);
+	background-image: -moz-linear-gradient(top, #fff, #f1f1f1); }
+input[type=file]::-webkit-file-upload-button:hover {
+	border-color: #bbb; box-shadow: 1px 1px 3px rgba(0,0,0,0.15); }
+input[type=password]:hover { background: #ffd; }
+
+/* */
+.absmiddle { vertical-align: middle; }
+.bold { font-weight: bold; }
+.center { text-align: center; }
+.hide { display: none; }
+.lf { float: left; }
+.noborder { border: none; }
+.rf { float: right; }
+
+/* button.css */
+button, input.tbutton, input.rbutton { overflow: visible; box-sizing: border-box; -webkit-appearance: none; }
+.button, .rbutton, .tbutton { display: inline-block; font-size: 100%; 
+	line-height: 32px; margin: 0 3px 3px 0; padding: 0px 20px; 
+	text-align: center; cursor: default; color: #777; 
+	border-radius: 2px; -webkit-user-select: none; outline: 0; }
+
+/** 普通按钮样式定义. */
+.button { background: #ddd; color: #777; border: none;
+	border: 0px solid rgba(0,0,0,0.1); font-size: 13px; }
+.button:hover  { color: #000; text-decoration: none; background: #d5d5d5; 
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.08); border-color: rgba(0,0,0,0.2); }
+.button:active, .button_checked { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset; 
+	background: #e5e5e5; }
+
+/** 深色按钮样式定义, 如 Submit 等按钮的. */
+.rbutton { border: none; cursor: default; background: #d44937; color: #fff; }
+.rbutton:hover { text-decoration: none; background: #0080DD; color: #fff; }
+.rbutton:active { background: #d9604f; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) inset; }
+
+/** header.css */
+header { height: 71px; min-width: 300px; max-height: 180px; border-bottom: 1px solid #ddd;
+	background: #f5f6f7; }
+header #logo-wrapper a { margin-left: 32px; font-size: 24px; line-height: 36px; }
+header #logo-wrapper { padding-top: 20px; }
+header #signup-wrap { position: absolute; right: 30px; top: 26px; }
+header .header-inner { height: 80px; border: none; background: #f9f9f9; display: block; }
+
+/** footer.css */
+footer { text-align: center; line-height: 24px; color: #999; padding-bottom: 8px;
+	 background: #eee; display: none; }
+footer .nav { padding: 16px 0 0 0; max-width: 998px; margin: 0 auto; }
+footer .nav ul li { display: inline; }
+footer .nav a { padding: 0 8px; color: #999; text-shadow: rgb(255, 255, 255) 0px 1px 0px; }
+
+p.tip { color: #999; }
+p.error { color: red; }
+
+em.error { background: none; margin: 5px 0 8px 10px;
+	padding: 0; color: #c66; font-style: normal;
+	vertical-align: middle; }
+em.success { background: url("images/checked.gif?v=20120903") no-repeat 0px 3px; 
+	padding: 5px 8px 5px 24px; margin: 0 8px; font-style: normal; vertical-align: middle; }
+em.info { padding: 3px 24px; font-style: normal; vertical-align: middle; }
+
+.body-wrapper { min-width: 300px; max-width: 400px; min-height: 400px; 
+	padding: 0 32px; margin: 0 auto; }
+h1.login-title { padding: 3px 0; margin: 30px 0 20px 0; font-size: 240%; color: #d44937; }
+
+form li { padding: 3px 0; }
+form li label { font-size: 120%;  }
+form dt { width: 180px; font-weight: normal; line-height: 270%; }
+form dd { margin-bottom: 8px; }
+form div.name { margin: 15px 0 5px 0; }
+form input.text { font-size: 15px; padding: 8px 8px; width: 320px; }
+form .rbutton { height: 2.7em; }
+
+#register_tip_block { text-align: center; font-size: 12pt; color:red; }
+
+* { scrollbar-face-color: #e9e9e9; scrollbar-highlight-color: #e9e9e9; 
+	scrollbar-shadow-color: #e9e9e9; scrollbar-3dlight-color: #e9e9e9; scrollbar-arrow-color: #e9e9e9; 
+	scrollbar-track-color: #f9f9f9; scrollbar-darkshadow-color: #e9e9e9; }
+
+@media screen and (max-width: 600px) { 
+	header #signup-wrap { right: 10px; }
+	header #signup-wrap span { display: none; }
+}
